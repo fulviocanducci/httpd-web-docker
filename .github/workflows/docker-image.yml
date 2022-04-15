@@ -5,7 +5,7 @@ on:
     branches: [ docker ]
     
 env:
-  VERSION_ID: ${{(date +%s)}}
+  VERSION_ID: ${GITHUB_RUN_NUMBER}
     
 jobs:
   build:
